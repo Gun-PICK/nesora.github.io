@@ -516,23 +516,3 @@ main h2:not(.hero h2){
     0 2px 5px rgba(0,0,0,.2);
 
 }
-
-.message{
-    position:relative;
-    z-index:2;
-
-    font-family:"Courier New", monospace;
-    font-weight:bold;
-
-    font-size:28px;
-    letter-spacing:4px;
-
-    opacity:0;
-
-    animation:fadein 4s forwards;
-
-    text-shadow:
-    0 0 5px white,
-    0 0 15px #7FFFD4,
-    0 0 30px #42D9B8;
-}
