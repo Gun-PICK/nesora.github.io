@@ -438,7 +438,31 @@ textarea{
 
 }
 
+@media (max-width:600px){
 
+    .character-card{
+        display:flex;
+        flex-direction:column; /* 縦並び */
+        align-items:center;
+        text-align:center;
+    }
+
+    .character-card img{
+        width:70%;
+        max-width:220px;
+        margin-bottom:20px;
+    }
+
+    .character-text{
+        width:100%;
+    }
+
+    .character-text p{
+        text-align:left; /* 中央揃えが嫌なら左揃え */
+        line-height:1.8;
+    }
+
+}
 
 /* PC */
 @media(min-width:601px){
