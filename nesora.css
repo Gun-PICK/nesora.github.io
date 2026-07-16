@@ -6,7 +6,7 @@ body {
 }
 
 /* VHSノイズ */
-body::before{
+body::after{
     content:"";
     position:fixed;
     inset:0;
@@ -14,11 +14,12 @@ body::before{
     background-image:url("bg-static01.gif");
     background-repeat:no-repeat;
     background-size:cover;
-    opacity:0;
-    pointer-events:none;
-    z-index:999;
+    background-position:center;
 
-    animation:noiseFlash 20s infinite;
+    opacity:0.08;
+
+    pointer-events:none;
+    z-index:1;
 }
 
 
