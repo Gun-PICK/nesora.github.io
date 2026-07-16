@@ -12,10 +12,9 @@ body::before{
     inset:0;
 
     background-image:url("bg-static01.gif");
-    background-repeat:repeat;
-
+    background-repeat:no-repeat;
+    background-size:cover;
     opacity:0;
-
     pointer-events:none;
     z-index:999;
 
