@@ -175,61 +175,50 @@ main{
 
 
 /* アクリル看板 */
-.hero h2 {
+.hero h2{
 
     display:inline-block;
 
-    padding:80px 120px;
-
+    padding:60px 100px;  /* ← アクリル板を大きくする */
 
     color:white;
 
-    font-size:48px;
+    font-size:56px;      /* ← 文字も少し大きく */
 
     font-weight:bold;
 
     letter-spacing:5px;
 
 
-
-    /* 透明アクリル板 */
-
-    background:rgba(255,255,255,0.25);
-
-
-
-    border:3px solid rgba(255,255,255,0.8);
-
-    border-radius:25px;
+    background-image:
+    linear-gradient(
+        rgba(255,255,255,0.25),
+        rgba(255,255,255,0.25)
+    ),
+    url("hq720.jpg");
 
 
+    background-size:cover;
 
-    /* 奥の施設を透かす */
+    background-position:center;
+
+
+    border:3px solid rgba(255,255,255,.8);
+
+    border-radius:30px;
+
 
     backdrop-filter:blur(6px);
 
 
-
-    /* アクリルの厚み */
-
     box-shadow:
+    inset 0 0 25px rgba(255,255,255,.8),
+    0 0 40px rgba(255,255,255,.7);
 
-    inset 0 0 20px rgba(255,255,255,0.8),
-
-    0 0 30px rgba(255,255,255,0.7);
-
-
-
-    /* ネオン文字 */
 
     text-shadow:
-
     0 0 5px white,
-
-    0 0 15px #42D9B8,
-
-    0 0 30px #42D9B8;
-
+    0 0 15px #42D9B8;
 }
 
 
