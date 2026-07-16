@@ -3,6 +3,7 @@ body {
 
     margin:0;
     padding-bottom:60px;
+}
 
 /* VHSノイズ */
 body::before{
@@ -305,26 +306,6 @@ main{
     z-index:1000;
 }
 
-.message{
-    font-family:"Noto Sans JP", sans-serif;
-    font-weight:700;
-
-    position:relative;
-    z-index:2;
-
-    font-size:26px;
-    letter-spacing:6px;
-
-    opacity:0;
-
-    animation:fadein 4s forwards;
-
-    text-shadow:
-    0 0 10px white,
-    0 0 20px #7FFFD4,
-    0 0 40px #42D9B8;
-}
-
 /* キャラクターカード */
 
 .character-card{
@@ -534,4 +515,24 @@ main h2:not(.hero h2){
 
     0 2px 5px rgba(0,0,0,.2);
 
+}
+
+.message{
+    font-family:"Noto Sans JP", sans-serif;
+    font-weight:700;
+
+    position:relative;
+    z-index:2;
+
+    font-size:26px;
+    letter-spacing:6px;
+
+    opacity:0;
+
+    animation:fadein 4s forwards;
+
+    text-shadow:
+    0 0 10px white,
+    0 0 20px #7FFFD4,
+    0 0 40px #42D9B8;
 }
