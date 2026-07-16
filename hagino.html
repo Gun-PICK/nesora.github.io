@@ -30,6 +30,28 @@ body {
     font-family: "DotGothic16", sans-serif;
 
     overflow: hidden;
+    position: relative;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    pointer-events:none;
+    z-index:0;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:url("bg-static01.gif");
+    background-size:cover;
+    background-repeat:no-repeat;
+    opacity:0.08;
+    pointer-events:none;
+    z-index:1;
 }
 
 .message{
@@ -51,35 +73,6 @@ body {
     text-shadow:
     0 0 5px #7FFFD4,
     0 0 15px #42D9B8;
-}
-
-/* 背景を暗くする */
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-
-    background:rgba(0,0,0,0.6);
-
-    pointer-events:none;
-
-    z-index:1;
-}
-
-/* ノイズ */
-body::after{
-    content:"";
-    position:fixed;
-    inset:0;
-
-    background-image:url("bg-static01.gif");
-    background-size:cover;
-    background-repeat:no-repeat;
-
-    opacity:0.08;
-
-    pointer-events:none;
-    z-index:1;
 }
 
 @keyframes fadein{
