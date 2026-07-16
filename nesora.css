@@ -6,20 +6,20 @@ body {
 }
 
 /* VHSノイズ */
-body::after{
+body::before{
     content:"";
     position:fixed;
     inset:0;
 
     background-image:url("bg-static01.gif");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
+    background-repeat:repeat;
 
-    opacity:0.08;
+    opacity:0;
 
     pointer-events:none;
-    z-index:1;
+    z-index:999;
+
+    animation:noiseFlash 20s infinite;
 }
 
 
