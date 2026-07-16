@@ -35,20 +35,6 @@ header h1 a{
     text-decoration:none;
 }
 
-header{
-    background:#7FFFD4;
-    color:white;
-    padding:15px;
-
-    position:relative;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    box-shadow:0 4px 15px rgba(0,0,0,.2);
-}
-
 .menu-btn{
     position:absolute;
     right:15px;
@@ -174,9 +160,19 @@ main{
     z-index:1000;
 }
 
-header {
-    position: relative;
-    z-index: 1000;
+header{
+    background:#7FFFD4;
+    color:white;
+    padding:15px;
+
+    position:relative;
+    z-index:1000;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
 }
 
 #menu {
