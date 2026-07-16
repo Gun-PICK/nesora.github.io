@@ -436,10 +436,6 @@ textarea{
 
     }
 
-}
-
-@media (max-width:600px){
-
     .character-card{
         display:flex;
         flex-direction:column; /* 縦並び */
