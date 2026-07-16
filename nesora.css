@@ -521,18 +521,18 @@ main h2:not(.hero h2){
     position:relative;
     z-index:2;
 
-    font-family:"Noto Sans JP", sans-serif;
-    font-weight:700;
+    font-family:"Courier New", monospace;
+    font-weight:bold;
 
-    font-size:26px;
-    letter-spacing:6px;
+    font-size:28px;
+    letter-spacing:4px;
 
     opacity:0;
 
     animation:fadein 4s forwards;
 
     text-shadow:
-    0 0 10px white,
-    0 0 20px #7FFFD4,
-    0 0 40px #42D9B8;
+    0 0 5px white,
+    0 0 15px #7FFFD4,
+    0 0 30px #42D9B8;
 }
