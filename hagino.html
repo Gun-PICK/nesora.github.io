@@ -28,6 +28,26 @@ body {
     overflow: hidden;
 }
 
+.message{
+    position:relative;
+    z-index:2;
+
+    font-family:"Courier New", monospace;
+    font-weight:bold;
+
+    font-size:28px;
+    letter-spacing:4px;
+
+    color:#d8fff2;
+
+    opacity:0;
+
+    animation:fadein 4s forwards;
+
+    text-shadow:
+    0 0 5px #7FFFD4,
+    0 0 15px #42D9B8;
+}
 
 /* 背景を暗くする */
 body::before{
