@@ -387,8 +387,9 @@ textarea{
     height:150px;
 }
 
-
-
+textarea{
+    resize:none;
+}
 
 /* スマホ */
 @media(max-width:600px){
