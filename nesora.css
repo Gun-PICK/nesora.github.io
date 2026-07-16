@@ -12,10 +12,22 @@ body::before{
     background-image:url("bg-static01.gif");
     background-repeat:repeat;
 
-    opacity:0.03;
+    opacity:0;
 
     pointer-events:none;
     z-index:999;
+
+    animation:noiseFlash 8s infinite;
+}
+
+@keyframes noiseFlash{
+    0%,85%,100%{
+        opacity:0;
+    }
+
+    87%,90%{
+        opacity:0.12;
+    }
 }
 
 header h1 a{
