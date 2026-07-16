@@ -161,6 +161,16 @@ main{
     z-index:1000;
 }
 
+header h1{
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size:48px;
+
+    text-shadow:
+    0 0 5px white,
+    0 0 15px #42D9B8,
+    0 0 30px #42D9B8;
+}
+
 header{
     background:#7FFFD4;
     color:white;
