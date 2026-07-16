@@ -7,8 +7,7 @@ body {
     background-image:url("hq720.jpg");
 
     /* 背景を大きく見せる */
-    background-size:120% auto;
-
+    background-size:cover;
     background-position:center top;
 
     background-repeat:no-repeat;
@@ -179,11 +178,11 @@ main{
 
     display:inline-block;
 
-    padding:60px 100px;  /* ← アクリル板を大きくする */
+    padding:50px 90px;  /* ← アクリル板を大きくする */
 
     color:white;
 
-    font-size:56px;      /* ← 文字も少し大きく */
+    font-size:52px;      /* ← 文字も少し大きく */
 
     font-weight:bold;
 
