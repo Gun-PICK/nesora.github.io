@@ -4,17 +4,6 @@ body {
     margin:0;
     padding-bottom:60px;
 
-    background-image:url("hq720.jpg");
-
-    /* 背景を大きく見せる */
-    background-size:cover;
-    background-position:center top;
-
-    background-repeat:no-repeat;
-
-    background-attachment:fixed;
-}
-
 /* VHSノイズ */
 body::before{
     content:"";
