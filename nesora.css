@@ -10,9 +10,8 @@ body::before{
     inset:0;
 
     background-image:url("bg-static01.gif");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background-size:auto;
+    background-repeat:repeat;
 
     opacity:0;
 
@@ -21,7 +20,6 @@ body::before{
 
     animation:noiseFlash 20s infinite;
 }
-
 @keyframes noiseFlash{
 
     0%,92%,100%{
