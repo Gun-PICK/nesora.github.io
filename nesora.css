@@ -18,16 +18,6 @@ body::before{
     z-index:999;
 }
 
-@keyframes noiseFlash{
-    0%,85%,100%{
-        opacity:0;
-    }
-
-    87%,90%{
-        opacity:0.12;
-    }
-}
-
 header h1 a{
     color:white;
     text-decoration:none;
