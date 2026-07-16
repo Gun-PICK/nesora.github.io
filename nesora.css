@@ -17,15 +17,17 @@ body::before{
     pointer-events:none;
     z-index:999;
 
-    animation:noiseFlash 8s infinite;
+    animation:noiseFlash 20s infinite;
 }
 
+
 @keyframes noiseFlash{
-    0%,85%,100%{
+
+    0%,92%,100%{
         opacity:0;
     }
 
-    87%,90%{
+    93%,94%{
         opacity:0.12;
     }
 }
