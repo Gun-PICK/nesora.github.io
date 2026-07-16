@@ -7,17 +7,17 @@ body {
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-
     background-attachment:fixed;
 }
 
+
+/* VHSノイズ */
 body::before{
     content:"";
     position:fixed;
     inset:0;
 
     background-image:url("bg-static01.gif");
-    background-size:auto;
     background-repeat:repeat;
 
     opacity:0;
@@ -27,8 +27,9 @@ body::before{
 
     animation:noiseFlash 20s infinite;
 }
-@keyframes noiseFlash{
 
+
+@keyframes noiseFlash{
     0%,92%,100%{
         opacity:0;
     }
@@ -38,145 +39,12 @@ body::before{
     }
 }
 
-header h1 a{
-    color:white;
-    text-decoration:none;
-}
 
-.menu-btn{
-    position:absolute;
-    right:15px;
-    top:50%;
-    transform:translateY(-50%);
-
-    font-size:30px;
-    background:none;
-    border:none;
-    color:white;
-}
-
-#menu {
-    display: none;
-}
-
-main{
-    padding:20px;
-}
-
-.hero{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-.hero h2 {
-
-    display:inline-block;
-
-    padding:40px 70px;
-
-    color:white;
-
-    font-size:48px;
-    font-weight:bold;
-    letter-spacing:5px;
-
-
-    /* アクリル板 */
-    background:rgba(255,255,255,0.25);
-
-    border:3px solid rgba(255,255,255,0.8);
-
-    border-radius:25px;
-
-
-    /* 背景を少しぼかして透過感 */
-    backdrop-filter:blur(6px);
-
-
-    /* アクリルの厚み */
-    box-shadow:
-    inset 0 0 20px rgba(255,255,255,0.8),
-    0 0 30px rgba(255,255,255,0.7);
-
-
-    text-shadow:
-    0 0 5px white,
-    0 0 15px #42D9B8;
-}
-
-.hero p {
-    font-family: "Mochiy Pop One", sans-serif;
-    color: #FFD93E;
-    font-size: 18px;
-    
-    text-shadow:
-        0 0 5px #FFF8E7,
-        0 0 15px #FFE95E,
-        0 0 30px #FFD93E;
-}
-
-.enter-btn{
-    display:inline-block;
-
-    margin-top:30px;
-    padding:15px 40px;
-
-    background:#42D9B8;
-    color:#FFF8E7;
-
-    text-decoration:none;
-
-    border-radius:10px;
-
-    font-size:20px;
-
-    box-shadow:0 0 20px #42D9B8;
-}
-
-.enter-btn:hover {
-    background: #7FFFD4;
-    box-shadow: 0 0 25px #42D9B8;
-}
-
-#playBtn {
-    position:fixed;
-    bottom:0;
-    left:0;
-
-    width:100%;
-
-    padding:12px 20px;
-
-    background:#ff8fd8;
-    color:white;
-
-    border:none;
-
-    font-size:14px;
-    font-family:"M PLUS Rounded 1c", sans-serif;
-
-    letter-spacing:2px;
-    text-align:left;
-
-    box-shadow:0 -3px 10px rgba(0,0,0,.15);
-
-    z-index:1000;
-}
-
-header h1{
-    font-family: "Mochiy Pop One", sans-serif;
-    font-size:48px;
-
-    text-shadow:
-    0 0 5px white,
-    0 0 15px #42D9B8,
-    0 0 30px #42D9B8;
-}
-
+/* ヘッダー */
 header{
     background:#7FFFD4;
     color:white;
+
     padding:15px;
 
     position:relative;
@@ -189,195 +57,473 @@ header{
     box-shadow:0 4px 15px rgba(0,0,0,.2);
 }
 
+
+header h1{
+    font-family:"Mochiy Pop One", sans-serif;
+    font-size:48px;
+
+    margin:0;
+
+    text-shadow:
+    0 0 5px white,
+    0 0 15px #42D9B8,
+    0 0 30px #42D9B8;
+}
+
+
+header h1 a{
+    color:white;
+    text-decoration:none;
+}
+
+
+
+/* メニューボタン */
+.menu-btn{
+    position:absolute;
+
+    right:15px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    font-size:30px;
+
+    background:none;
+    border:none;
+
+    color:white;
+}
+
+
+/* メニュー */
+#menu{
+    display:none;
+
+    position:relative;
+    z-index:1000;
+}
+
+
+#menu.open{
+    display:block;
+}
+
+
 #menu a{
     display:block;
+
     padding:15px;
+
     text-decoration:none;
+
     color:#333;
+
     border-bottom:1px solid #ddd;
 
-    font-family:"Mochiy Pop One", sans-serif;
+    font-family:"Mochiy Pop One",sans-serif;
+
     font-size:18px;
 
     letter-spacing:2px;
 
-    transition:0.3s;
+    transition:.3s;
 }
 
 
 #menu a:hover{
+
     background:#7FFFD4;
+
     color:white;
 
     text-shadow:
     0 0 5px white,
     0 0 10px #42D9B8;
 
+
     box-shadow:
-    inset 0 0 15px rgba(255,255,255,0.5);
+    inset 0 0 15px rgba(255,255,255,.5);
 
     transform:translateX(5px);
 }
 
-#menu {
-    position: relative;
-    z-index: 1000;
+
+
+/* メイン */
+main{
+    padding:20px;
 }
 
-#menu.open{
-    display:block;
-}
 
-.character-card{
+/* トップ */
+.hero{
+
     display:flex;
+
+    flex-direction:column;
+
     align-items:center;
-    gap:20px;
+
+}
+
+
+
+/* アクリル看板 */
+.hero h2{
+
+    display:inline-block;
+
+    padding:40px 70px;
+
+    color:white;
+
+    font-family:"Mochiy Pop One",sans-serif;
+
+    font-size:48px;
+
+    font-weight:bold;
+
+    letter-spacing:5px;
+
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(255,255,255,.45),
+    rgba(255,255,255,.15)
+    );
+
+
+    border:
+
+    3px solid rgba(255,255,255,.8);
+
+
+    border-radius:25px;
+
+
+    backdrop-filter:blur(6px);
+
+
+    box-shadow:
+
+    inset 0 0 20px rgba(255,255,255,.8),
+
+    0 0 30px rgba(255,255,255,.7);
+
+
+    text-shadow:
+
+    0 0 5px white,
+
+    0 0 15px #42D9B8;
+}
+
+
+
+/* キャッチコピー */
+.hero p{
+
+    font-family:"Mochiy Pop One",sans-serif;
+
+    color:#FFD93E;
+
+    font-size:18px;
+
+
+    text-shadow:
+
+    0 0 5px #FFF8E7,
+
+    0 0 15px #FFE95E,
+
+    0 0 30px #FFD93E;
+}
+
+
+
+/* ボタン */
+.enter-btn{
+
+    display:inline-block;
 
     margin-top:30px;
-    padding:20px;
 
-    background:white;
-    border-radius:15px;
+    padding:15px 40px;
 
-    box-shadow:0 4px 10px rgba(0,0,0,.15);
+
+    background:#42D9B8;
+
+    color:#FFF8E7;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-size:20px;
+
+
+    box-shadow:
+
+    0 0 20px #42D9B8;
 }
 
+
+
+.enter-btn:hover{
+
+    background:#7FFFD4;
+
+    box-shadow:
+
+    0 0 25px #42D9B8;
+}
+
+
+
+/* BGM */
+#playBtn{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+
+    padding:12px 20px;
+
+
+    background:#ff8fd8;
+
+    color:white;
+
+    border:none;
+
+
+    font-family:"M PLUS Rounded 1c",sans-serif;
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+    text-align:left;
+
+
+    z-index:1000;
+}
+
+
+
+/* キャラクターカード */
+
+.character-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+
+    margin-top:30px;
+
+    padding:20px;
+
+
+    background:white;
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 4px 10px rgba(0,0,0,.15);
+}
+
+
 .character-card img{
+
     width:180px;
+
     border-radius:12px;
 }
 
-.character-text h3{
-    margin-top:0;
-}
 
 .character-text p{
+
     line-height:1.8;
 }
 
-@media (max-width:600px){
-    .character-card{
-        flex-direction:column;
-        text-align:center;
-    }
 
-    .character-card img{
-        width:70%;
-        max-width:220px;
-    }
-}
 
-main p{
-    line-height:1.8;
-    margin-bottom:25px;
-}
+/* フォーム */
 
 form{
+
     background:white;
+
     padding:20px;
+
     border-radius:15px;
 
     max-width:500px;
+
     margin:30px auto;
 }
 
 
+
 input,
 textarea{
+
     width:100%;
+
     box-sizing:border-box;
 
     padding:10px;
+
     border:1px solid #ddd;
+
     border-radius:8px;
 }
 
+
+
 textarea{
+
     height:150px;
 }
 
-@media (max-width:600px){
 
-    header{
-        padding:20px;
-    }
+
+
+/* スマホ */
+@media(max-width:600px){
 
     header h1{
         font-size:45px;
     }
 
+
     .menu-btn{
+
         font-size:36px;
+
     }
 
 
     .hero h2{
+
         font-size:38px;
+
         padding:35px 25px;
+
         width:80%;
+
+        box-sizing:border-box;
+
         text-align:center;
     }
 
 
     .hero p{
+
         font-size:22px;
+
         text-align:center;
+
     }
 
 
     .enter-btn{
+
         font-size:24px;
+
         padding:20px 50px;
-    }
 
-
-    #playBtn{
-        font-size:16px;
-        padding:18px;
     }
 
 }
 
-/* PC表示拡大 */
-@media (min-width:601px){
+
+
+/* PC */
+@media(min-width:601px){
 
     header{
+
         padding:25px;
+
     }
+
 
     header h1{
+
         font-size:70px;
+
     }
+
 
     main{
+
         max-width:1200px;
+
         margin:auto;
+
         padding:40px;
+
     }
+
 
     .hero{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
+
         margin-top:60px;
+
     }
+
 
     .hero h2{
+
         font-size:48px;
+
         padding:50px 80px;
+
         border-radius:35px;
+
     }
+
 
     .hero p{
+
         font-size:26px;
-        margin-top:40px;
+
     }
 
+
     .enter-btn{
+
         margin-top:50px;
+
         padding:22px 70px;
+
         font-size:28px;
-        border-radius:15px;
+
     }
+
+}
+
+
+/* 施設案内などの見出し */
+main h2:not(.hero h2){
+
+    color:#42D9B8;
+
+    text-shadow:
+
+    0 2px 5px rgba(0,0,0,.2);
 
 }
