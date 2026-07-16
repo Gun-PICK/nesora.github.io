@@ -2,12 +2,6 @@ body {
     background:#FFF8E7;
     margin:0;
     padding-bottom:60px;
-
-    background-image:url("hq720.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
 }
 
 
@@ -178,27 +172,26 @@ main{
 
     color:white;
 
-    font-family:"Mochiy Pop One",sans-serif;
-
     font-size:48px;
-
     font-weight:bold;
-
     letter-spacing:5px;
 
 
-    background:
+    /* 施設画像入りアクリル板 */
+    background-image:
     linear-gradient(
-    135deg,
-    rgba(255,255,255,.45),
-    rgba(255,255,255,.15)
-    );
+        rgba(255,255,255,0.25),
+        rgba(255,255,255,0.25)
+    ),
+    url("hq720.jpg");
 
 
-    border:
+    background-size:cover;
 
-    3px solid rgba(255,255,255,.8);
+    background-position:center;
 
+
+    border:3px solid rgba(255,255,255,.8);
 
     border-radius:25px;
 
