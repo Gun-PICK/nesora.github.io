@@ -1,9 +1,20 @@
 body {
     background:#FFF8E7;
+
     margin:0;
     padding-bottom:60px;
-}
 
+    background-image:url("hq720.jpg");
+
+    /* 背景を大きく見せる */
+    background-size:120% auto;
+
+    background-position:center top;
+
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
+}
 
 /* VHSノイズ */
 body::before{
@@ -164,53 +175,61 @@ main{
 
 
 /* アクリル看板 */
-.hero h2{
+.hero h2 {
 
     display:inline-block;
 
     padding:40px 70px;
 
+
     color:white;
 
     font-size:48px;
+
     font-weight:bold;
+
     letter-spacing:5px;
 
 
-    /* 施設画像入りアクリル板 */
-    background-image:
-    linear-gradient(
-        rgba(255,255,255,0.25),
-        rgba(255,255,255,0.25)
-    ),
-    url("hq720.jpg");
+
+    /* 透明アクリル板 */
+
+    background:rgba(255,255,255,0.25);
 
 
-    background-size:cover;
 
-    background-position:center;
-
-
-    border:3px solid rgba(255,255,255,.8);
+    border:3px solid rgba(255,255,255,0.8);
 
     border-radius:25px;
 
 
+
+    /* 奥の施設を透かす */
+
     backdrop-filter:blur(6px);
 
 
+
+    /* アクリルの厚み */
+
     box-shadow:
 
-    inset 0 0 20px rgba(255,255,255,.8),
+    inset 0 0 20px rgba(255,255,255,0.8),
 
-    0 0 30px rgba(255,255,255,.7);
+    0 0 30px rgba(255,255,255,0.7);
 
+
+
+    /* ネオン文字 */
 
     text-shadow:
 
     0 0 5px white,
 
-    0 0 15px #42D9B8;
+    0 0 15px #42D9B8,
+
+    0 0 30px #42D9B8;
+
 }
 
 
