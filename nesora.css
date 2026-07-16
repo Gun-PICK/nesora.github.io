@@ -301,3 +301,55 @@ textarea{
     }
 
 }
+
+/* PC表示拡大 */
+@media (min-width:601px){
+
+    header{
+        padding:25px;
+    }
+
+    header h1{
+        font-size:48px;
+    }
+
+
+    main{
+        max-width:1200px;
+        margin:auto;
+        padding:40px;
+    }
+
+
+    .hero{
+        margin-top:60px;
+    }
+
+
+    .hero h2{
+        font-size:48px;
+        padding:50px 80px;
+        border-radius:35px;
+    }
+
+
+    .hero p{
+        font-size:26px;
+        margin-top:40px;
+    }
+
+
+    .enter-btn{
+        margin-top:50px;
+        padding:22px 70px;
+        font-size:28px;
+        border-radius:15px;
+    }
+
+
+    #playBtn{
+        font-size:18px;
+        padding:18px 30px;
+    }
+
+}
