@@ -52,14 +52,6 @@ header h1 a{
     display: none;
 }
 
-#menu a{
-    display:block;
-    padding:15px;
-    text-decoration:none;
-    color:black;
-    border-bottom:1px solid #ddd;
-}
-
 main{
     padding:20px;
 }
@@ -184,6 +176,36 @@ header{
     align-items:center;
 
     box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
+
+#menu a{
+    display:block;
+    padding:15px;
+    text-decoration:none;
+    color:#333;
+    border-bottom:1px solid #ddd;
+
+    font-family:"Mochiy Pop One", sans-serif;
+    font-size:18px;
+
+    letter-spacing:2px;
+
+    transition:0.3s;
+}
+
+
+#menu a:hover{
+    background:#7FFFD4;
+    color:white;
+
+    text-shadow:
+    0 0 5px white,
+    0 0 10px #42D9B8;
+
+    box-shadow:
+    inset 0 0 15px rgba(255,255,255,0.5);
+
+    transform:translateX(5px);
 }
 
 #menu {
@@ -359,6 +381,7 @@ textarea{
 
 h2{
     color:#42D9B8;
+
     text-shadow:
     0 2px 5px rgba(0,0,0,.2);
 }
