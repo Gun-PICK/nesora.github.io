@@ -1,7 +1,14 @@
 body {
-    background: #FFF8E7;
-    margin: 0;
-    padding-bottom: 60px;
+    background:#FFF8E7;
+    margin:0;
+    padding-bottom:60px;
+
+    background-image:url("好きな背景画像.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    background-attachment:fixed;
 }
 
 body::before{
