@@ -53,7 +53,47 @@
 
     position:absolute;
 
-    top:0;
+    inset:0;
+
+    background:
+    repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(127,255,212,.08) 4px
+    );
+
+    opacity:0;
+
+    animation:screenNoise 5s infinite;
+
+}
+
+
+@keyframes screenNoise{
+
+    0%,85%,100%{
+        opacity:0;
+    }
+
+    90%{
+        opacity:.4;
+    }
+
+}
+
+
+@keyframes screenNoise{
+
+    0%,85%,100%{
+        opacity:0;
+    }
+
+    90%{
+        opacity:.4;
+    }
+
+}
     left:-100%;
 
     width:80%;
