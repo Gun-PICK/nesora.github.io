@@ -168,11 +168,11 @@ main{
 
     display:inline-block;
 
-    padding:50px 90px;  /* ← アクリル板を大きくする */
+    padding:50px 90px;
 
     color:white;
 
-    font-size:52px;      /* ← 文字も少し大きく */
+    font-size:52px;
 
     font-weight:bold;
 
@@ -409,6 +409,8 @@ textarea{
 
         font-size:38px;
 
+        font-family: "Yomogi", cursive;
+
         padding:35px 25px;
 
         width:80%;
@@ -454,7 +456,7 @@ textarea{
     }
 
     .character-text p{
-        text-align:left; /* 中央揃えが嫌なら左揃え */
+        text-align:left;
         line-height:1.8;
     }
 
