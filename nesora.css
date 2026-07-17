@@ -149,6 +149,10 @@ main{
     padding:20px;
 }
 
+main p{
+    font-family:"M PLUS Rounded 1c", sans-serif;
+}
+
 main h2:not(.hero h2){
 
     font-family:"M PLUS Rounded 1c", sans-serif;
