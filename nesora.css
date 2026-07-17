@@ -183,6 +183,8 @@ main h2:not(.hero h2){
 /* アクリル看板 */
 .hero h2{
 
+    font-family:"M PLUS Rounded 1c", sans-serif;
+
     display:inline-block;
 
     padding:50px 90px;
