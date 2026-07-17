@@ -64,6 +64,19 @@ header h1{
     0 0 30px #42D9B8;
 }
 
+main h3{
+
+    font-family:"Zen Maru Gothic", sans-serif;
+
+    font-size:30px;
+
+    color:#42D9B8;
+
+    text-shadow:
+        0 0 6px rgba(255,255,255,.5),
+        0 2px 5px rgba(0,0,0,.2);
+
+}
 
 header h1 a{
     color:white;
