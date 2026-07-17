@@ -44,28 +44,53 @@
     0 0 5px #7FFFD4,
     0 0 15px #42D9B8,
     0 0 30px #42D9B8;
+
+    animation:
+        fadein 4s forwards,
+        textGlitch 8s infinite;
 }
 
 
-.success-message::before{
+@keyframes textGlitch{
 
-    content:"";
+    0%,88%,100%{
+        transform:translate(0);
+        text-shadow:
+        0 0 5px #7FFFD4,
+        0 0 15px #42D9B8,
+        0 0 30px #42D9B8;
+    }
 
-    position:absolute;
 
-    inset:0;
+    90%{
 
-    background:
-    repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 3px,
-        rgba(127,255,212,.08) 4px
-    );
+        transform:translate(-2px,1px);
 
-    opacity:0;
+        text-shadow:
+        3px 0 #ff6b6b,
+        -3px 0 #42D9B8,
+        0 0 15px #42D9B8;
 
-    animation:screenNoise 5s infinite;
+    }
+
+
+    92%{
+
+        transform:translate(2px,-1px);
+
+        text-shadow:
+        -3px 0 #ff6b6b,
+        3px 0 #42D9B8,
+        0 0 20px #42D9B8;
+
+    }
+
+
+    94%{
+
+        transform:translate(0);
+
+    }
 
 }
 
