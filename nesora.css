@@ -253,7 +253,7 @@ main h2:not(.hero h2){
 
 .title-text{
     display:inline-block;
-    transform:translateX(8px);
+    transform:translateX(10px);
 }
 
 .hero p{
