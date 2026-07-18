@@ -218,6 +218,7 @@ main h2:not(.hero h2){
 
     letter-spacing:5px;
 
+    text-align:center;
 
     background-image:
     linear-gradient(
@@ -250,11 +251,11 @@ main h2:not(.hero h2){
     0 0 15px #42D9B8;
 }
 
-.punct{
-    margin-left:-0.2em;
+.title-text{
+    display:inline-block;
+    transform:translateX(8px);
 }
 
-/* キャッチコピー */
 .hero p{
 
     font-family:"Mochiy Pop One",sans-serif;
