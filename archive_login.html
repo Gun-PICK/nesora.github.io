@@ -1,65 +1,107 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
+    background:#111;
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
-
-<title>NESORA 管理者認証</title>
-
-<style>
-
-body{
-    margin:0;
-    height:100vh;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    background:#000;
     color:#7FFFD4;
+
+    border:1px solid #7FFFD4;
 
     font-family:"DotGothic16", monospace;
 }
 
-.login-box{
-
-    width:320px;
-
-    padding:30px;
-
-    border:1px solid #7FFFD4;
-
-    background:rgba(127,255,212,.05);
-
-    box-shadow:0 0 20px rgba(127,255,212,.2);
-
-}
-
-h1{
-
-    font-size:24px;
-    margin-top:0;
-
-    text-shadow:0 0 10px #7FFFD4;
-}
-
-p{
-    font-size:14px;
-    color:#9cc;
-}
-
-input{
+button{
 
     width:100%;
 
+    margin-top:20px;
+
+    padding:12px;
+
+    background:#7FFFD4;
+
+    color:#000;
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:"DotGothic16", monospace;
+
+    font-weight:bold;
+}
+
+button:hover{
+
+    background:#a8ffe8;
+}
+
+#error{
+
     margin-top:15px;
 
-    padding:10px;
+    color:#ff6666;
 
-    box-sizing:border-box;
+    font-size:13px;
+}
 
-    background
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>NESORA INTERNAL TERMINAL</h1>
+
+<p>
+管理者認証が必要です。<br>
+Operator Password を入力してください。
+</p>
+
+<input
+type="password"
+id="password"
+placeholder="Password">
+
+<button onclick="login()">
+認証
+</button>
+
+<div id="error"></div>
+
+</div>
+
+<script>
+
+const PASSWORD = "NESORA1958";
+
+function login(){
+
+    const pass = document.getElementById("password").value;
+
+    if(pass === PASSWORD){
+
+        location.href = "archive.html";
+
+    }else{
+
+        document.getElementById("error").textContent =
+        "認証に失敗しました。";
+
+    }
+
+}
+
+document.getElementById("password").addEventListener("keydown", function(e){
+
+    if(e.key === "Enter"){
+
+        login();
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
