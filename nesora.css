@@ -316,7 +316,42 @@ main h2:not(.hero h2){
     0 0 25px #42D9B8;
 }
 
+.admin-btn{
 
+    position:fixed;
+
+    right:20px;
+    bottom:80px;
+
+    padding:8px 14px;
+
+    background:rgba(0,0,0,.4);
+
+    color:#aaa;
+
+    text-decoration:none;
+
+    border:1px solid #666;
+
+    border-radius:8px;
+
+    font-size:12px;
+
+    font-family:"M PLUS Rounded 1c",sans-serif;
+
+    transition:.3s;
+
+}
+
+.admin-btn:hover{
+
+    color:#7FFFD4;
+
+    border-color:#7FFFD4;
+
+    box-shadow:0 0 10px #7FFFD4;
+
+}
 
 /* BGM */
 #playBtn{
